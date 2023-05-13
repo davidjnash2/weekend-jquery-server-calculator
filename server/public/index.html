@@ -11,7 +11,55 @@
 </head>
 <body>
     <h1>LET'S DO NUMBERS!</h1>
-    <form id="calculator">
+    <div class="flex-container">
+    <form id="input-calculator">
+        <table id="input-entries">
+            <thead>
+                <tr>
+                    <th>
+                        <input
+                            id="first-number"
+                            class="number-input"
+                            placeholder="First Number"
+                            type="number"
+                            required
+                            autocomplete="off"
+                        />
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><button class="input-button" id="sum">+</button></td>
+                    <td><button class="input-button" id="subtract">-</button></td>
+                    <td><button class="input-button" id="multiply">X</button></td>
+                    <td><button class="input-button" id="division">/</button></td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr>
+                    <th>
+                        <input
+                            id="second-number"
+                            class="number-input"
+                            placeholder="Second Number"
+                            type="number"
+                            required
+                            autocomplete="off"
+                        />
+                    </th>
+                </tr>
+                <tr>
+                    <th><button class="input-button" id="answer">=</button></th>
+                </tr>
+                <tr>
+                    <th id="answer"><span id="answer">ANSWER</span></th>
+                </tr>
+            </thead>
+        </table>
+    </form>
+    </div>
+    <!-- <form id="calculator">
         <table id="calculator-table">
             <thead>
                 <tr>
@@ -38,7 +86,7 @@
                     <td class="calculator-button"><button id="one">1</button></td>
                     <td class="calculator-button"><button id="two">2</button></td>
                     <td class="calculator-button"><button id="three">3</button></td>
-                    <td class="calculator-button"><button id="multiply">X</button></td>
+                    <td class="calculator-button"><button id="times">X</button></td>
                 </tr>
                 <tr>
                     <td class="calculator-button"><button id="zero">0</button></td>
@@ -47,8 +95,11 @@
                 </tr>  
             </tbody>
         </table>
-    </form>
-
+    </form> -->
+    <div id="calculation-history">
+        <h2>Calculation History</h2>
+        <ul id="interaction-log"></ul>
+    </div>
     
 </body>
 </html>

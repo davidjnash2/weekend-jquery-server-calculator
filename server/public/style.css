@@ -8,14 +8,42 @@ h1 {
     text-align: center;
 }
 
-th {
-    width: 82%;
+td {
+    display: inline-block;
 }
 
-td {
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: greenyellow;
+  }
+
+/* #input-calculator {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    object-position: center;
+    object-fit: relative;
+} */
+
+#input-entries{
+    table-layout: fixed;
+}
+
+#answer{
+    border: 0;
+    background-color: white;
+}
+/* th {
+    width: 82%;
+} */
+
+/* td {
     width: 7.25%;
     border: 1px solid black;
-}
+} */
 
 #calculator-table {
     display: block;
