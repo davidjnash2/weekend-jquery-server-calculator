@@ -1,5 +1,9 @@
+body {
+    background-color: slateblue;
+}
+
 h1 {
-    background-color: honeydew;
+    background-color: hotpink;
     text-decoration: underline;
     text-align: center;
 }
