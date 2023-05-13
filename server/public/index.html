@@ -11,7 +11,32 @@
 </head>
 <body>
     <h1>LET'S DO NUMBERS!</h1>
-    <div class="flex-container">
+    <form id="calculator-inputs">
+        <input 
+        id="first-number"
+        class="number-input"
+        placeholder="First Number"
+        type="number"
+        required
+        autocomplete="off"
+        >
+        <button class="operator-button" value="+" id="sum">+</button>
+        <button class="operator-button" value="-" id="subtract">-</button>
+        <button class="operator-button" value="*" id="multiply">x</button>
+        <button class="operator-button" value="/" id="divide">/</button>
+        <input 
+        id="second-number"
+        class="number-input"
+        placeholder="Second Number"
+        type="number"
+        required
+        autocomplete="off"
+        >
+        <button class="result-button" value="+" id="answer-button">=</button>
+        <button class="clear-button"  id="clear-inputs-button">C</button>
+        <p>And the answer is...<span id="answer-output">Answer!</span></p>
+    </form>
+    <!-- <div class="flex-container">
     <form id="input-calculator">
         <table id="input-entries">
             <thead>
@@ -50,15 +75,16 @@
                     </th>
                 </tr>
                 <tr>
-                    <th><button class="input-button" id="answer">=</button></th>
+                    <td><button class="input-button" id="answer-button">=</button></td>
+                    <td><button class="input-button" id="clear-inputs-button">C</button></td>
                 </tr>
                 <tr>
-                    <th id="answer"><span id="answer">ANSWER</span></th>
+                    <th id="answer-spot"><span id="answer">ANSWER</span></th>
                 </tr>
             </thead>
         </table>
     </form>
-    </div>
+    </div> -->
     <!-- <form id="calculator">
         <table id="calculator-table">
             <thead>
