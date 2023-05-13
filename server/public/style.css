@@ -8,11 +8,16 @@ h1 {
     text-align: center;
 }
 
-.th {
-    width: 25%;
+th {
+    width: 82%;
 }
 
-.calculator-table {
+td {
+    width: 7.25%;
+    border: 1px solid black;
+}
+
+#calculator-table {
     display: block;
     margin: auto;
     width: fit-content;
@@ -28,7 +33,7 @@ h1 {
     text-align: center;
     display: inline-block;
     font-size: 14px;
-     margin: 4px 2px;
+    margin: 4px 2px;
     border-radius: 5px;
     font-weight: bold;
 }
