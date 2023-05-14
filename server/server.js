@@ -14,11 +14,11 @@ function doMaths(inputs) {
       inputs.result = Number(inputs.num1) + Number(inputs.num2);
     } else if (inputs.operator === '-'){
       inputs.result = Number(inputs.num1) - Number(inputs.num2);          
-    } else if (inputs.operator === 'x'){
+    } else if (inputs.operator === '*'){
       inputs.result = Number(inputs.num1) * Number(inputs.num2); 
     } else if (inputs.operator === '/') {
       inputs.result = Number(inputs.num1) / Number(inputs.num2);
-}
+    }
 
 answers.push(inputs);
 }
@@ -28,20 +28,20 @@ console.log('Answers are:', answers)
 
 
 app.get('/maths', function(req, res){
-  console.log('...and the answer is:', answers);
-  res.send(results);
+  console.log('return from app.get/maths is:', answers);
+  res.send(answers);
 })
 
 app.post('/maths', function(req, res){
-  console.log( 'Here is some maths!!');
+  console.log( 'User says do maths!!');
   console.log('req.body is', req.body);
   doMaths(req.body);
   res.sendStatus(201);
 })
 
 app.get('/answers', function(req, res){
-  console.log('results logs are:', answers);
-  res.send(results);
+  console.log(' answers results logs are:', answers);
+  res.send(answers);
 })
 
 app.listen(PORT, () => {

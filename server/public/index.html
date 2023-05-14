@@ -11,117 +11,30 @@
 </head>
 <body>
     <h1>LET'S DO NUMBERS!</h1>
-    <form id="calculator-inputs">
+    <form id="calculator">
         <input 
         id="first-number"
-        class="number-input"
         placeholder="First Number"
         type="number"
         required
         autocomplete="off"
         >
-        <button class="operator-button" value="+" id="sum">+</button>
-        <button class="operator-button" value="-" id="subtract">-</button>
-        <button class="operator-button" value="*" id="multiply">x</button>
-        <button class="operator-button" value="/" id="divide">/</button>
+        <button class="operator-button" type="button" id="'+'" >+</button>
+        <button class="operator-button" type="button" id="-" >-</button>
+        <button class="operator-button" type="button" id="*" >x</button>
+        <button class="operator-button" type="button" id="/" >/</button>
         <input 
         id="second-number"
-        class="number-input"
         placeholder="Second Number"
         type="number"
         required
         autocomplete="off"
         >
-        <button class="result-button" value="+" id="answer-button">=</button>
-        <button class="clear-button"  id="clear-inputs-button">C</button>
-        <p>And the answer is...<span id="answer-output">Answer!</span></p>
+        <button class="submit" id="submit-button">=</button>    
     </form>
-    <!-- <div class="flex-container">
-    <form id="input-calculator">
-        <table id="input-entries">
-            <thead>
-                <tr>
-                    <th>
-                        <input
-                            id="first-number"
-                            class="number-input"
-                            placeholder="First Number"
-                            type="number"
-                            required
-                            autocomplete="off"
-                        />
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><button class="input-button" id="sum">+</button></td>
-                    <td><button class="input-button" id="subtract">-</button></td>
-                    <td><button class="input-button" id="multiply">X</button></td>
-                    <td><button class="input-button" id="division">/</button></td>
-                </tr>
-            </tbody>
-            <thead>
-                <tr>
-                    <th>
-                        <input
-                            id="second-number"
-                            class="number-input"
-                            placeholder="Second Number"
-                            type="number"
-                            required
-                            autocomplete="off"
-                        />
-                    </th>
-                </tr>
-                <tr>
-                    <td><button class="input-button" id="answer-button">=</button></td>
-                    <td><button class="input-button" id="clear-inputs-button">C</button></td>
-                </tr>
-                <tr>
-                    <th id="answer-spot"><span id="answer">ANSWER</span></th>
-                </tr>
-            </thead>
-        </table>
-    </form>
-    </div> -->
-    <!-- <form id="calculator">
-        <table id="calculator-table">
-            <thead>
-                <tr>
-                    <th class="calculator-button" ><button id="clear">C</button></th>
-                </tr>
-                <tr>
-                    <th class="calculator-button"><button id="all-clear">AC</button></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="calculator-button"><button id="seven">7</button></td>
-                    <td class="calculator-button"><button id="eight">8</button></td>
-                    <td class="calculator-button"><button id="nine">9</button></td>
-                    <td class="calculator-button"><button id="plus">+</button></td>  
-                </tr>
-                <tr>
-                    <td class="calculator-button"><button id="four">4</button></td>
-                    <td class="calculator-button"><button id="five">5</button></td>
-                    <td class="calculator-button"><button id="six">6</button></td>
-                    <td class="calculator-button"><button id="minus">-</td> 
-                </tr>
-                <tr>
-                    <td class="calculator-button"><button id="one">1</button></td>
-                    <td class="calculator-button"><button id="two">2</button></td>
-                    <td class="calculator-button"><button id="three">3</button></td>
-                    <td class="calculator-button"><button id="times">X</button></td>
-                </tr>
-                <tr>
-                    <td class="calculator-button"><button id="zero">0</button></td>
-                    <td class="calculator-button"><button id="equals">=</button></td>
-                    <td class="calculator-button"><button id="divide">/</button></td>
-                </tr>  
-            </tbody>
-        </table>
-    </form> -->
+    <button class="clear"  id="clear-inputs-button">C</button>
+    <p>And the answer is...<span id="answer-output">Answer!</span></p>
+    
     <div id="calculation-history">
         <h2>Calculation History</h2>
         <ul id="interaction-log"></ul>
